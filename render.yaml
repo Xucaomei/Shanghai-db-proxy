@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: db-proxy-for-grandma
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TARGET_URL
+        value: "https://您的数据库网站.com"  # 替换成您的数据库网站
+      - key: ALLOWED_EMAILS
+        value: "同事1@gmail.com,同事2@gmail.com,同事3@gmail.com"  # 同事的邮箱
+    healthCheckPath: /health
+    autoDeploy: true
