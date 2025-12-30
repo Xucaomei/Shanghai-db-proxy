@@ -5,8 +5,8 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: TARGET_URL
-        value: "https://您的数据库网站.com"  # 替换成您的数据库网站
+        value: "http://www.jieyoutsg.com/e/member/login/"  # 替换成您的数据库网站
       - key: ALLOWED_EMAILS
-        value: "同事1@gmail.com,同事2@gmail.com,同事3@gmail.com"  # 同事的邮箱
+        value: "386495297@qq.com,18504755335@163.com,同事3@gmail.com"  # 同事的邮箱
     healthCheckPath: /health
     autoDeploy: true
